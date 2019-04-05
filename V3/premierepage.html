@@ -1,0 +1,36 @@
+<html>
+	<header><title>Mon Site</title></header>
+	<head>
+	<script language="javascript">
+
+
+/*btn.addEventListener('click', updateBtn);*/
+
+function updateBtn() {
+		var btn = document.querySelector('input');
+		var txt = document.querySelector('p');
+  if (btn.value === 'Demarrer la machine') {
+    btn.value = 'Arreter la machine';
+    txt.textContent = 'La machine est demarree !';
+  } else {
+    btn.value = 'Demarrer la machine';
+    txt.textContent = 'La machine est arretee.';
+  }
+}</script></head>
+	<body>
+		
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		Bonjour a tous.
+		<label for="name">Nom:</label>
+		<!--<input type="text" id="name" name="name" size="10">
+	<p id="demo">Ce texte va changer grace au JavaScript</p>
+	<button type="button" onclick='document.getElementById("demo").innerHTML = "Hop le texte vient de changer !"'>Tiens, voila un bouton !</button>
+	<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Afficher la date et l'heure</button>-->
+<form> 
+  <input type="button" value="Demarrer la machine" onclick=updateBtn()>
+</form>
+<p>La machine est arretee.</p>
+	
+	
+	</body>
+</html>
